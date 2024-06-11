@@ -120,7 +120,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
     def load_user_data(self):
         users = User.fetch()
         self.table_user.setRowCount(len(users))
-        self.table_user.setColumnCount(len(users[0])+1)
+        # self.table_user.setColumnCount(len(users[0])+1)
         for row_idx, user in enumerate(users):            
             for col_idx, data in enumerate(user):
                 self.table_user.setItem(row_idx, col_idx, QTableWidgetItem(str(data)))
@@ -267,7 +267,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         caterogy_id = self.comboBox_product.currentText()
         products = Product.fetch(caterogy_id)
         self.table_product.setRowCount(len(products))
-        self.table_product.setColumnCount(len(products[0])+1)
+        # self.table_product.setColumnCount(len(products[0])+1)
         for row_idx, product in enumerate(products):            
             for col_idx, data in enumerate(product):
                 self.table_product.setItem(row_idx, col_idx, QTableWidgetItem(str(data)))
@@ -500,6 +500,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
 
         spinBox_quantity = QSpinBox()
         spinBox_quantity.setMinimum(1)
+        spinBox_quantity.setMaximum(999)
 
         add_button = QPushButton("Thêm")
         delete_button = QPushButton("Xoá")
@@ -528,16 +529,15 @@ class MySideBar(QMainWindow, Ui_MainWindow):
             for product in products: 
                 comboBox_product.addItem(product[1])
 
-        def update_quantity():
-            quantity = Product.fetch_product(comboBox_product.currentText())[2]
-            spinBox_quantity.setMaximum(quantity)
-
         def add_product_to_table():
             product_name = comboBox_product.currentText()
             price = Product.fetch_product(product_name)[1]
             quantity = spinBox_quantity.value()
             total_price = price * quantity
             product_quantity = Product.fetch_product(product_name)[2]
+            if quantity > product_quantity:
+                QMessageBox.warning(order_dialog, "Warning", "Không đủ số lượng sản phẩm.")
+                return
             for row in range(table_add_order.rowCount()):
                 item = table_add_order.item(row, 0)
                 if item is not None and item.text() == product_name:
@@ -615,17 +615,13 @@ class MySideBar(QMainWindow, Ui_MainWindow):
         buttons.accepted.connect(on_ok_clicked)
         buttons.rejected.connect(order_dialog.reject)
         comboBox_category.currentTextChanged.connect(update_products)
-        comboBox_product.currentTextChanged.connect(update_quantity)
         add_button.clicked.connect(add_product_to_table)
         delete_button.clicked.connect(delete_product_from_table)
 
         update_products()
 
         if order_dialog.exec() == QDialog.Accepted:
-            print("Order created")
             self.load_order_data()
-        else:
-            print("Order creation cancelled")
 
     def delete_selected_orders(self):
         rows_to_delete = []
