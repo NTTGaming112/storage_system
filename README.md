@@ -19,7 +19,7 @@ Hệ thống Quản lý Bán hàng là một ứng dụng nhằm quản lý quy 
     ```
 4. Cài đặt MySQL bằng cách paste tệp `database.sql` vào terminal MySQL của bạn
 ## Sử dụng
-1. Chạy ứng dụng bằng cách chạy tệp `app.py`.
+1. Chạy ứng dụng bằng cách chạy tệp `run_app.bat`.
 
 ## Chức năng chính
 - Thêm, cập nhật, xóa người dùng
