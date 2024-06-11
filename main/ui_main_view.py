@@ -4,7 +4,7 @@
 
 ################################################################################
 
-## Form generated from reading UI file 'main_view.ui'
+## Form generated from reading UI file 'ui_main_view.ui'
 
 ##
 
@@ -68,173 +68,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_2.setObjectName(u"gridLayout_2")
 
-        self.icon_only_widget = QWidget(self.centralwidget)
-
-        self.icon_only_widget.setObjectName(u"icon_only_widget")
-
-        self.icon_only_widget.setStyleSheet(u"QWidget{\n"
-
-"	background-color: rgb(31, 159, 239);\n"
-
-"}\n"
-
-"QPushButton{\n"
-
-"	color:white;\n"
-
-"	height:30px;\n"
-
-"	border:none;\n"
-
-"	border-radius:10px\n"
-
-"}\n"
-
-"QPushButton:checked{\n"
-
-"	background-color: #F5FAFE;\n"
-
-"	color: #1F95EF;\n"
-
-"	font-weight:bold;\n"
-
-"}")
-
-        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
-
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-
-        self.label = QLabel(self.icon_only_widget)
-
-        self.label.setObjectName(u"label")
-
-        self.label.setMinimumSize(QSize(40, 40))
-
-        self.label.setMaximumSize(QSize(40, 40))
-
-        self.label.setPixmap(QPixmap(u":/pic/profile.png"))
-
-        self.label.setScaledContents(True)
-
-
-
-        self.verticalLayout_3.addWidget(self.label)
-
-
-
-        self.verticalLayout = QVBoxLayout()
-
-        self.verticalLayout.setObjectName(u"verticalLayout")
-
-        self.user_1 = QPushButton(self.icon_only_widget)
-
-        self.user_1.setObjectName(u"user_1")
-
-        icon = QIcon()
-
-        icon.addFile(u":/pic/product_icon.png", QSize(), QIcon.Normal, QIcon.Off)
-
-        self.user_1.setIcon(icon)
-
-        self.user_1.setCheckable(True)
-
-        self.user_1.setChecked(True)
-
-        self.user_1.setAutoExclusive(True)
-
-
-
-        self.verticalLayout.addWidget(self.user_1)
-
-
-
-        self.product_1 = QPushButton(self.icon_only_widget)
-
-        self.product_1.setObjectName(u"product_1")
-
-        self.product_1.setIcon(icon)
-
-        self.product_1.setCheckable(True)
-
-        self.product_1.setAutoExclusive(True)
-
-
-
-        self.verticalLayout.addWidget(self.product_1)
-
-
-
-        self.order_1 = QPushButton(self.icon_only_widget)
-
-        self.order_1.setObjectName(u"order_1")
-
-        self.order_1.setIcon(icon)
-
-        self.order_1.setCheckable(True)
-
-        self.order_1.setAutoExclusive(True)
-
-
-
-        self.verticalLayout.addWidget(self.order_1)
-
-
-
-        self.thongke_1 = QPushButton(self.icon_only_widget)
-
-        self.thongke_1.setObjectName(u"thongke_1")
-
-        self.thongke_1.setIcon(icon)
-
-        self.thongke_1.setCheckable(True)
-
-        self.thongke_1.setAutoExclusive(True)
-
-
-
-        self.verticalLayout.addWidget(self.thongke_1)
-
-
-
-
-
-        self.verticalLayout_3.addLayout(self.verticalLayout)
-
-
-
-        self.verticalSpacer = QSpacerItem(17, 467, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-
-
-        self.verticalLayout_3.addItem(self.verticalSpacer)
-
-
-
-        self.exit_0 = QPushButton(self.icon_only_widget)
-
-        self.exit_0.setObjectName(u"exit_0")
-
-        icon1 = QIcon()
-
-        icon1.addFile(u":/pic/log_out.png", QSize(), QIcon.Normal, QIcon.Off)
-
-        self.exit_0.setIcon(icon1)
-
-        self.exit_0.setCheckable(True)
-
-        self.exit_0.setAutoExclusive(True)
-
-
-
-        self.verticalLayout_3.addWidget(self.exit_0)
-
-
-
-
-
-        self.gridLayout_2.addWidget(self.icon_only_widget, 0, 0, 1, 1)
-
-
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
 
         self.icon_name_widget = QWidget(self.centralwidget)
 
@@ -294,7 +128,7 @@ class Ui_MainWindow(object):
 
         self.label_2.setMaximumSize(QSize(40, 40))
 
-        self.label_2.setPixmap(QPixmap(u":/pic/profile.png"))
+        self.label_2.setPixmap(QPixmap(u":/newPrefix/pic/caterogy_icon.png"))
 
         self.label_2.setScaledContents(True)
 
@@ -335,6 +169,10 @@ class Ui_MainWindow(object):
         self.user_2 = QPushButton(self.icon_name_widget)
 
         self.user_2.setObjectName(u"user_2")
+
+        icon = QIcon()
+
+        icon.addFile(u":/newPrefix/pic/product_icon.png", QSize(), QIcon.Normal, QIcon.Off)
 
         self.user_2.setIcon(icon)
 
@@ -416,6 +254,10 @@ class Ui_MainWindow(object):
 
         self.exit_1.setObjectName(u"exit_1")
 
+        icon1 = QIcon()
+
+        icon1.addFile(u":/newPrefix/pic/log_out.png", QSize(), QIcon.Normal, QIcon.Off)
+
         self.exit_1.setIcon(icon1)
 
         self.exit_1.setCheckable(True)
@@ -431,6 +273,168 @@ class Ui_MainWindow(object):
 
 
         self.gridLayout_2.addWidget(self.icon_name_widget, 0, 1, 1, 1)
+
+
+
+        self.icon_only_widget = QWidget(self.centralwidget)
+
+        self.icon_only_widget.setObjectName(u"icon_only_widget")
+
+        self.icon_only_widget.setStyleSheet(u"QWidget{\n"
+
+"	background-color: rgb(31, 159, 239);\n"
+
+"}\n"
+
+"QPushButton{\n"
+
+"	color:white;\n"
+
+"	height:30px;\n"
+
+"	border:none;\n"
+
+"	border-radius:10px\n"
+
+"}\n"
+
+"QPushButton:checked{\n"
+
+"	background-color: #F5FAFE;\n"
+
+"	color: #1F95EF;\n"
+
+"	font-weight:bold;\n"
+
+"}")
+
+        self.verticalLayout_3 = QVBoxLayout(self.icon_only_widget)
+
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+
+        self.verticalLayout_3.setContentsMargins(9, 9, 9, 9)
+
+        self.label = QLabel(self.icon_only_widget)
+
+        self.label.setObjectName(u"label")
+
+        self.label.setMinimumSize(QSize(40, 40))
+
+        self.label.setMaximumSize(QSize(40, 40))
+
+        self.label.setPixmap(QPixmap(u":/newPrefix/pic/profile.png"))
+
+        self.label.setScaledContents(True)
+
+
+
+        self.verticalLayout_3.addWidget(self.label)
+
+
+
+        self.verticalLayout = QVBoxLayout()
+
+        self.verticalLayout.setObjectName(u"verticalLayout")
+
+        self.user_1 = QPushButton(self.icon_only_widget)
+
+        self.user_1.setObjectName(u"user_1")
+
+        self.user_1.setIcon(icon)
+
+        self.user_1.setCheckable(True)
+
+        self.user_1.setChecked(True)
+
+        self.user_1.setAutoExclusive(True)
+
+
+
+        self.verticalLayout.addWidget(self.user_1)
+
+
+
+        self.product_1 = QPushButton(self.icon_only_widget)
+
+        self.product_1.setObjectName(u"product_1")
+
+        self.product_1.setIcon(icon)
+
+        self.product_1.setCheckable(True)
+
+        self.product_1.setAutoExclusive(True)
+
+
+
+        self.verticalLayout.addWidget(self.product_1)
+
+
+
+        self.order_1 = QPushButton(self.icon_only_widget)
+
+        self.order_1.setObjectName(u"order_1")
+
+        self.order_1.setIcon(icon)
+
+        self.order_1.setCheckable(True)
+
+        self.order_1.setAutoExclusive(True)
+
+
+
+        self.verticalLayout.addWidget(self.order_1)
+
+
+
+        self.thongke_1 = QPushButton(self.icon_only_widget)
+
+        self.thongke_1.setObjectName(u"thongke_1")
+
+        self.thongke_1.setIcon(icon)
+
+        self.thongke_1.setCheckable(True)
+
+        self.thongke_1.setAutoExclusive(True)
+
+
+
+        self.verticalLayout.addWidget(self.thongke_1)
+
+
+
+
+
+        self.verticalLayout_3.addLayout(self.verticalLayout)
+
+
+
+        self.verticalSpacer = QSpacerItem(17, 467, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+
+
+        self.verticalLayout_3.addItem(self.verticalSpacer)
+
+
+
+        self.exit_0 = QPushButton(self.icon_only_widget)
+
+        self.exit_0.setObjectName(u"exit_0")
+
+        self.exit_0.setIcon(icon1)
+
+        self.exit_0.setCheckable(True)
+
+        self.exit_0.setAutoExclusive(True)
+
+
+
+        self.verticalLayout_3.addWidget(self.exit_0)
+
+
+
+
+
+        self.gridLayout_2.addWidget(self.icon_only_widget, 0, 0, 1, 1)
 
 
 
@@ -1176,7 +1180,7 @@ class Ui_MainWindow(object):
 
         icon2 = QIcon()
 
-        icon2.addFile(u":/pic/menu.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/newPrefix/pic/menu.png", QSize(), QIcon.Normal, QIcon.Off)
 
         self.menu.setIcon(icon2)
 
@@ -1226,7 +1230,7 @@ class Ui_MainWindow(object):
 
         icon3 = QIcon()
 
-        icon3.addFile(u":/pic/profile.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/newPrefix/pic/caterogy_icon.png", QSize(), QIcon.Normal, QIcon.Off)
 
         self.profile.setIcon(icon3)
 
@@ -1300,18 +1304,6 @@ class Ui_MainWindow(object):
 
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
 
-        self.label.setText("")
-
-        self.user_1.setText("")
-
-        self.product_1.setText("")
-
-        self.order_1.setText("")
-
-        self.thongke_1.setText("")
-
-        self.exit_0.setText("")
-
         self.label_2.setText("")
 
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"SideBar", None))
@@ -1325,6 +1317,18 @@ class Ui_MainWindow(object):
         self.thongke_2.setText(QCoreApplication.translate("MainWindow", u"Doanh thu", None))
 
         self.exit_1.setText(QCoreApplication.translate("MainWindow", u"Sign Out", None))
+
+        self.label.setText("")
+
+        self.user_1.setText("")
+
+        self.product_1.setText("")
+
+        self.order_1.setText("")
+
+        self.thongke_1.setText("")
+
+        self.exit_0.setText("")
 
         ___qtablewidgetitem = self.table_user.horizontalHeaderItem(0)
 

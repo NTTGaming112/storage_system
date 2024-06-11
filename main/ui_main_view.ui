@@ -22,161 +22,18 @@ color: rgb(0, 0, 0);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout_2">
-    <item row="0" column="0">
-     <widget class="QWidget" name="icon_only_widget" native="true">
-      <property name="styleSheet">
-       <string notr="true">QWidget{
-	background-color: rgb(31, 159, 239);
-}
-QPushButton{
-	color:white;
-	height:30px;
-	border:none;
-	border-radius:10px
-}
-QPushButton:checked{
-	background-color: #F5FAFE;
-	color: #1F95EF;
-	font-weight:bold;
-}</string>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="minimumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>40</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-         <property name="pixmap">
-          <pixmap>:/pic/profile.png</pixmap>
-         </property>
-         <property name="scaledContents">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QPushButton" name="user_1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="checked">
-            <bool>true</bool>
-           </property>
-           <property name="autoExclusive">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>false</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="product_1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="autoExclusive">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="order_1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="autoExclusive">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="thongke_1">
-           <property name="text">
-            <string/>
-           </property>
-           <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
-           </property>
-           <property name="checkable">
-            <bool>true</bool>
-           </property>
-           <property name="autoExclusive">
-            <bool>true</bool>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <spacer name="verticalSpacer">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>17</width>
-           <height>467</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="exit_0">
-         <property name="text">
-          <string/>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>:/pic/log_out.png</normaloff>:/pic/log_out.png</iconset>
-         </property>
-         <property name="checkable">
-          <bool>true</bool>
-         </property>
-         <property name="autoExclusive">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item row="0" column="1">
      <widget class="QWidget" name="icon_name_widget" native="true">
       <property name="styleSheet">
@@ -225,7 +82,7 @@ QPushButton:checked{
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>:/pic/profile.png</pixmap>
+            <pixmap resource="resources.qrc">:/newPrefix/pic/caterogy_icon.png</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -256,8 +113,8 @@ QPushButton:checked{
             <string>Khách hàng</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -276,8 +133,8 @@ QPushButton:checked{
             <string>Sản phẩm</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -293,8 +150,8 @@ QPushButton:checked{
             <string>Đợn hàng</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -310,8 +167,8 @@ QPushButton:checked{
             <string>Doanh thu</string>
            </property>
            <property name="icon">
-            <iconset>
-             <normaloff>:/pic/product_icon.png</normaloff>:/pic/product_icon.png</iconset>
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
            </property>
            <property name="checkable">
             <bool>true</bool>
@@ -342,8 +199,175 @@ QPushButton:checked{
           <string>Sign Out</string>
          </property>
          <property name="icon">
-          <iconset>
-           <normaloff>:/pic/log_out.png</normaloff>:/pic/log_out.png</iconset>
+          <iconset resource="resources.qrc">
+           <normaloff>:/newPrefix/pic/log_out.png</normaloff>:/newPrefix/pic/log_out.png</iconset>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="autoExclusive">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QWidget" name="icon_only_widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">QWidget{
+	background-color: rgb(31, 159, 239);
+}
+QPushButton{
+	color:white;
+	height:30px;
+	border:none;
+	border-radius:10px
+}
+QPushButton:checked{
+	background-color: #F5FAFE;
+	color: #1F95EF;
+	font-weight:bold;
+}</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="leftMargin">
+        <number>9</number>
+       </property>
+       <property name="topMargin">
+        <number>9</number>
+       </property>
+       <property name="rightMargin">
+        <number>9</number>
+       </property>
+       <property name="bottomMargin">
+        <number>9</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="resources.qrc">:/newPrefix/pic/profile.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="user_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="product_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="order_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="thongke_1">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="resources.qrc">
+             <normaloff>:/newPrefix/pic/product_icon.png</normaloff>:/newPrefix/pic/product_icon.png</iconset>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="autoExclusive">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>17</width>
+           <height>467</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="exit_0">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="resources.qrc">
+           <normaloff>:/newPrefix/pic/log_out.png</normaloff>:/newPrefix/pic/log_out.png</iconset>
          </property>
          <property name="checkable">
           <bool>true</bool>
@@ -1077,8 +1101,8 @@ background-color: rgb(204, 204, 204);</string>
              <string/>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>:/pic/menu.png</normaloff>:/pic/menu.png</iconset>
+             <iconset resource="resources.qrc">
+              <normaloff>:/newPrefix/pic/menu.png</normaloff>:/newPrefix/pic/menu.png</iconset>
             </property>
             <property name="iconSize">
              <size>
@@ -1123,8 +1147,8 @@ background-color: rgb(204, 204, 204);</string>
              <string/>
             </property>
             <property name="icon">
-             <iconset>
-              <normaloff>:/pic/profile.png</normaloff>:/pic/profile.png</iconset>
+             <iconset resource="resources.qrc">
+              <normaloff>:/newPrefix/pic/caterogy_icon.png</normaloff>:/newPrefix/pic/caterogy_icon.png</iconset>
             </property>
            </widget>
           </item>
