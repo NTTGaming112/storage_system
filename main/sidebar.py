@@ -218,6 +218,7 @@ class MySideBar(QMainWindow, Ui_MainWindow):
             QMessageBox.warning(self, "Error", "Tên đã tồn tại")
 
         self.load_user_data()
+        self.load_username()
         self.edit_user.setEnabled(False)
         self.user_changes.clear()
         self.add_user.setEnabled(True)
@@ -252,7 +253,8 @@ class MySideBar(QMainWindow, Ui_MainWindow):
 
         for row in reversed(rows_to_delete):
             self.table_user.removeRow(row)
-
+            
+        self.load_username()
         self.edit_user.setEnabled(False)
         self.user_changes.clear()
 
