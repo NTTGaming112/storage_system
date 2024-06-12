@@ -2,7 +2,7 @@
 Hệ thống quản lý và thống kê sản phẩm
 
 ## Giới thiệu
-Hệ thống Quản lý Bán hàng là một ứng dụng nhằm quản lý quy trình bán hàng từ việc thêm sản phẩm vào giỏ hàng, xử lý đơn hàng đến thống kê doanh thu. Ứng dụng cho phép người dùng thực hiện các thao tác quản lý bán hàng một cách dễ dàng và hiệu quả.
+Hệ thống Quản lý Bán hàng là một ứng dụng nhằm quản lý quy trình bán hàng từ việc thêm sản phẩm vào đơn hàng, xử lý đơn hàng đến thống kê doanh thu. Ứng dụng cho phép người dùng thực hiện các thao tác quản lý bán hàng một cách dễ dàng và hiệu quả.
 
 ## Cài đặt
 ### Yêu cầu
