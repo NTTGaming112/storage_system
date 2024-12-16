@@ -28,6 +28,6 @@ Hệ thống Quản lý Bán hàng là một ứng dụng nhằm quản lý quy 
 - Thống kê doanh thu theo ngày, tháng, năm.
 
 ## Tác giả
-- [Nguyễn Thanh Tuấn](https://github.com/NTTGaming112) - Noob Coder
+- [Nguyễn Thanh Tuấn](https://github.com/NTTGaming112)
 
 
